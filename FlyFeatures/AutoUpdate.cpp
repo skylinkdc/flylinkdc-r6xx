@@ -39,7 +39,7 @@ static const wstring UPDATE_FILE_NAME = L"";
 static const string UPDATE_RELEASE_URL = "";
 static const string UPDATE_BETA_URL = "";
 
-static const string UPDATE_FILE_DOWNLOAD_B = "Update6_beta.xml";
+static const string UPDATE_FILE_DOWNLOAD_B = "";
 static const string UPDATE_SIGN_FILE_DOWNLOAD_B = "";
 static const string UPDATE_DESCRIPTION_B = "";
 
