@@ -2,21 +2,20 @@
 <Bootstraps>
 	<antispam url="http://linkstar.pro"/>
 	<antispam url="xtrimloto.ru/?ref"/>
-	<antispam url="dchublist.biz"/>
 	<fly-server 
-		ip ="media.fly-server.ru"
-		port ="37015"
-		stat_server_ip = "stat.fly-server.ru"
-		stat_server_port = "37015"
-		test_server_ip = "test.fly-server.ru" 
-                test_server_port = "37015"
+		ip =""
+		port =""
+		stat_server_ip = ""
+		stat_server_port = ""
+		test_server_ip = "" 
+                test_server_port = ""
 		mirror_read_only_server = ""
-		mirror_test_port_server = "test.fly-server.ru:37015,media.fly-server.ru:37015"
+		mirror_test_port_server = ""
 		torrent_dht_server = "router.bittorrent.com:6881,router.utorrent.com:6881,dht.transmissionbt.com:6881,router.bitcomet.com:6881"
-		support_hub = "dchub://dc.fly-server.ru"
-		support_hub_en = "dchub://dc.fly-server.ru"
+		support_hub = "dchub://international.dchub.net"
+		support_hub_en = "dchub://international.dchub.net"
 		antivirus_db = ""
-		hublist_url = "http://www.te-home.net/?do=hublist&amp;get=hublist.xml.bz2,http://dchublist.ru/hublist.xml.bz2,http://dchublist.biz/?do=hublist.xml.bz2"
+		hublist_url = "http://dchublist.biz/?do=hublist&get=hublist.xml.bz2,https://dchublist.ru/hublist.xml.bz2,http://dchublists.com/?do=hublist&get=hublist.xml.bz2"
 		max_size_for_virus_detect = "10485760"
 		g_max_size_search_v_detect = "3145728"
 		unique_files_for_virus_detect = "3"
@@ -63,6 +62,6 @@
 		promo_hubs_plus  = ""
 		promo_hubs_plus_todo  = ""
 		promo_hubs_minus = ""
-		osago_url = "http://www.flylinkdc.ru"
+		osago_url = "https://dchublist.biz/?do=hublist&amp;page=1"
 	/>
 </Bootstraps>
