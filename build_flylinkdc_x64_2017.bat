@@ -15,8 +15,8 @@ rem "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Curre
 
 if not exist .\compiled\FlylinkDC_x64.exe goto :builderror
 
-"C:\Program Files (x86)\Windows Kits\10\bin\10.0.17134.0\x86\signtool.exe" sign /v /d "FlylinkDC++ r6xx" /du "http://flylinkdc.blogspot.com" /fd sha1 /t http://timestamp.verisign.com/scripts/timstamp.dll ".\compiled\FlylinkDC_x64.exe"
-"C:\Program Files (x86)\Windows Kits\10\bin\10.0.17134.0\x86\signtool.exe" sign /as /v /d "FlylinkDC++ r6xx" /du "http://flylinkdc.blogspot.com" /fd sha256 /tr http://timestamp.comodoca.com/rfc3161 /td sha256 ".\compiled\FlylinkDC_x64.exe"
+"C:\Program Files (x86)\Windows Kits\10\bin\10.0.17134.0\x86\signtool.exe" sign /v /d "FlylinkDC++ r6xx" /du "" /fd sha1 /t http://timestamp.verisign.com/scripts/timstamp.dll ".\compiled\FlylinkDC_x64.exe"
+"C:\Program Files (x86)\Windows Kits\10\bin\10.0.17134.0\x86\signtool.exe" sign /as /v /d "FlylinkDC++ r6xx" /du "" /fd sha256 /tr http://timestamp.comodoca.com/rfc3161 /td sha256 ".\compiled\FlylinkDC_x64.exe"
 
 call src_gen_filename.bat -x64
 7z.exe a -r -t7z -m0=lzma -mx=9 -mfb=512 -md=1024m -ms=on -x@src_exclude_hard.txt  -ir@src_include_bin_x64.txt %FILE_NAME%.7z compiled/FlylinkDC_x64.exe 
