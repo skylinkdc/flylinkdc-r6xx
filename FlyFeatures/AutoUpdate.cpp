@@ -33,27 +33,27 @@
 #include "InetDownloaderReporter.h"
 #include "flyServer.h"
 
-static const string g_dev_error = "\r\nPlease send a text or a screenshot of the error to developers ppa74@ya.ru";
-static const wstring UPDATE_FILE_NAME = L"flylink.upd";
+static const string g_dev_error = "\r\nPlease send a text or a screenshot of the error to";
+static const wstring UPDATE_FILE_NAME = L"";
 
-static const string UPDATE_RELEASE_URL = "http://update.fly-server.ru/update/6xx/release";
-static const string UPDATE_BETA_URL = "http://update.fly-server.ru/update/6xx/beta";
+static const string UPDATE_RELEASE_URL = "";
+static const string UPDATE_BETA_URL = "";
 
 static const string UPDATE_FILE_DOWNLOAD_B = "Update6_beta.xml";
-static const string UPDATE_SIGN_FILE_DOWNLOAD_B = "Update6_beta.sign";
-static const string UPDATE_DESCRIPTION_B = "Update6_beta.rtf";
+static const string UPDATE_SIGN_FILE_DOWNLOAD_B = "";
+static const string UPDATE_DESCRIPTION_B = "";
 
-static const string UPDATE_FILE_DOWNLOAD_R = "Update6.xml";
-static const string UPDATE_SIGN_FILE_DOWNLOAD_R = "Update6.sign";
-static const string UPDATE_DESCRIPTION_R = "Update6.rtf";
+static const string UPDATE_FILE_DOWNLOAD_R = "";
+static const string UPDATE_SIGN_FILE_DOWNLOAD_R = "";
+static const string UPDATE_DESCRIPTION_R = "";
 
 static string UPDATE_NODE_NAME = "Update6";
 
 #ifdef IRAINMAN_AUTOUPDATE_ALL_USERS_DATA
-static const string UPDATE_AU_URL = "http://update.fly-server.ru/update/alluser";
-static const string UPDATE_UPDATE_FILE = "UpdateAU.xml";
-static const string UPDATE_SIGN_FILE = "UpdateAU.sign";
-static const string UPDATE_DESCRIPTION_FILE = "UpdateAU.rtf";
+static const string UPDATE_AU_URL = "";
+static const string UPDATE_UPDATE_FILE = "";
+static const string UPDATE_SIGN_FILE = "";
+static const string UPDATE_DESCRIPTION_FILE = "";
 #endif
 
 bool AutoUpdate::g_exitOnUpdate = false;
@@ -279,7 +279,7 @@ void AutoUpdate::startUpdateThisThread()
 				l_autoUpdateObject,
 			    l_base_update_url);
 #ifdef IRAINMAN_AUTOUPDATE_ALL_USERS_DATA
-			// TODO - результат не юзается const string basesUpdateDescription =
+			// TODO - Г°ГҐГ§ГіГ«ГјГІГ ГІ Г­ГҐ ГѕГ§Г ГҐГІГ±Гї const string basesUpdateDescription =
 			getUpdateFilesList(STRING(PROGRAM_DATA), l_serverURL_AU, "UpdateAU",
 			                   UPDATE_UPDATE_FILE, UPDATE_DESCRIPTION_FILE, l_autoUpdateObjectAU,
 			                   l_base_updateAU_url);
@@ -338,7 +338,7 @@ void AutoUpdate::startUpdateThisThread()
 						}
 					}
 					//
-					if (l_totalSize) // Есть кандидаты для обновления?
+					if (l_totalSize) // Г…Г±ГІГј ГЄГ Г­Г¤ГЁГ¤Г ГІГ» Г¤Г«Гї Г®ГЎГ­Г®ГўГ«ГҐГ­ГЁГї?
 					{
 						string l_check_file_url = l_base_update_url + UPDATE_SIGN_FILE_DOWNLOAD();
 						string l_check_message;
