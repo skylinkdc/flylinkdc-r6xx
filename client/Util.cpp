@@ -46,8 +46,8 @@ string Util::g_sysPaths[Util::SYS_PATH_LAST];
 NUMBERFMT Util::g_nf = { 0 };
 bool Util::g_localMode = true;
 
-static string g_caption = "FlylinkDC++";
-static tstring g_captionT = _T("FlylinkDC++");
+static string g_caption = "CommunityDC++";
+static tstring g_captionT = _T("CommunityDC++");
 static bool g_is_load_name = false;
 const string getFlylinkDCAppCaption()
 {
